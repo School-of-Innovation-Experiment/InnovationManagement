@@ -1,0 +1,57 @@
+{% extends "features/settings.html" %}
+
+{% block active_profile_content %}  
+active
+{% endblock %}
+
+{% block settings_content %}
+	<div class="modal modal-fixed">
+		<div class="modal-header">
+			<h3><b>User Profile</b></h3>
+		</div>
+    <form method="post" action=".">
+      {% csrf_token %}
+		  <div class="modal-body">
+			 <label class="settings-label">Name</label>
+          {{ form.name }} 
+          <span class="form-error help-inline">{{form.name.errors}}</span>
+    		 <br/>
+    		 <label class="settings-label">Email</label>
+         {{ form.email }}
+          <span class="form-error help-inline">{{form.email.errors}}</span>
+    		 <br/>
+    		 <label class="settings-label">Telephone</label>
+         {{ form.telephone }}
+          <span class="form-error help-inline">{{form.telephone.errors}}</span>
+    		 <br/>
+    		 <label class="settings-label">Company</label>
+         {{ form.company }}
+          <span class="form-error help-inline">{{form.company.errors}}</span>
+    		 <br/>
+    		 <label class="settings-label">Location</label>
+         {{ form.location }}
+          <span class="form-error help-inline">{{form.location.errors}}</span>
+    		 <br/>
+		  </div>
+
+	</div>
+	<div class="modal modal-fixed modal-fixed-another">
+		<div class="modal-header">
+			<h3><b>Machine Information</b></h3>
+		</div>
+		  <div class="modal-body">
+			   <label class="settings-label">Machine Code</label>
+         {{ form.machinecode }}
+          <span class="form-error help-inline">{{form.machinecode.errors}}</span>
+    		 <br/>
+			   <label class="settings-label">Agent ID</label>
+         {{ form.agentid }}
+          <span class="form-error help-inline">{{form.agentid.errors}}</span>
+    		 <br/>
+      </div>
+      <div class="modal-footer">
+			  <button type="submit" class="btn btn-primary">Save changes</button>
+		  </div>
+    </form>
+	</div>
+{% endblock %}

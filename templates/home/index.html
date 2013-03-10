@@ -1,0 +1,50 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+	
+	<!-- index style -->
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/index.css" >
+    
+    
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="{{STATIC_URL}}/images/slide/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Join Chemistry Tools Group!</h1>
+              <p class="lead">Enjoy your professional, effecifient chemistry calculate.</p>
+              <a class="btn btn-large btn-primary" href="/accounts/register">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img src="{{STATIC_URL}}/images/slide/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Core Features</h1>
+              <p class="lead">Support some core algorithms for chemistry calculate.</p>
+              <a class="btn btn-large btn-primary" href="/features">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{{STATIC_URL}}/images/slide/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Support windows platform.</h1>
+              <p class="lead">Learn More about our client software</p>
+              <a class="btn btn-large btn-primary" href="/features">Learn More Client</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="/#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="/#myCarousel" data-slide="next">›</a>
+    
+    </div><!-- /.carousel -->
+	
+{% endblock %}
+    
