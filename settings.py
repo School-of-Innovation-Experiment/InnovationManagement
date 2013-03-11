@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'ChemManagement',             # Or path to database file if using sqlite3.
+        'NAME': 'Management',             # Or path to database file if using sqlite3.
         'USER': 'root',                       # Not used with sqlite3.
         'PASSWORD': 'root',                   # Not used with sqlite3.
         'HOST': '',                           # Set to empty string for localhost. Not used with sqlite3.
@@ -174,15 +174,6 @@ LOGGING = {
     }
 }
 
-LOG_PATH = os.path.join(os.path.dirname(__file__), "log")
-
-LOG_FILENAME = 'askbot.log'
-
-logging.basicConfig(filename=os.path.join(os.path.dirname(__file__), 'log', LOG_FILENAME),
-                    level=logging.CRITICAL,
-                    format='%(pathname)s TIME: %(asctime)s MSG:%(filename)s:%(funcName)s:%(lineno)d %(message)s',
-                    )
-
 #Add support  to user profile
 AUTH_PROFILE_MODULE = 'users.UserProfile'
 ACCOUNT_ACTIVATION_DAYS = 30
@@ -271,4 +262,4 @@ LOGGING = {
 }
 
 # Website settings
-WEB_TITLE = "Chemicals Management"
+WEB_TITLE = " Management"

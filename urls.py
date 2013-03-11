@@ -60,12 +60,12 @@ urlpatterns = patterns('',
     ),
     url(
         r'^settings/profile/$',
-        direct_to_template, {'template': 'widgets/settings/profile.html'},
-        #users_views.profile
+        #direct_to_template, {'template': 'widgets/settings/profile.html'},
+        users_views.profile
     ),
     url(
         r'^settings/admin/$',
-        direct_to_template, {'template': 'widgets/settings/admin.html'},
-        #users_views.admin_account
+        #direct_to_template, {'template': 'widgets/settings/admin.html'},
+        users_views.admin_account
     ),
 )
