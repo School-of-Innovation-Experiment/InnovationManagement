@@ -3,6 +3,73 @@
 
 {% block calculate-content%}
 <div class="container">
-  student final page
+  <!--Project Basic Infomation-->
+  {% include "student/widgets/project_info.html" %}
+  
+  <br/>
+
+  <div>
+    <div class="page-header">
+      <h3> 项目完成情况概述 </h3>
+    </div>
+    <blockquote>
+      <textarea class="fill-form" rows="8" placeholder="写200字左右就行..."></textarea>
+      <br/>
+      <label class="checkbox"><input type="checkbox">所借用的房间、仪器设备、工具、资料等是否归还</label>
+    </blockquote>
+  </div>
+  </br>
+  <div>
+    <div class="page-header">
+      <h3>主要成果 </h3>
+    </div>
+    <blockquote>
+      <fieldset>
+        <legend>实物（软件、图纸、报告等）</legend>
+        <div></div>
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend>学术论文</legend>
+        <div></div>
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend>发明专利</legend>
+        <div></div>
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend>科技竞赛</legend>
+        <div></div>
+      </fieldset>
+      <br/>
+    </blockquote>
+  </div>
+
+  <!--academic credit-->
+  <div>
+    <div class="page-header">
+      <h3>创新学分认定</h3>
+    </div>
+    <blockquote>
+      <div class="oneline">
+        <p>章文涛 21009306 
+          <span class="label label-success">认定</span>
+        </p>
+        <p>章文涛 21009306
+          <span class="label label-success">认定</span>
+        </p>
+        <p>章文涛 21009306
+          <span class="label label-success">认定</span>
+        </p>
+      </div>
+    </blockquote>
+  </div>
+
+  
+  {% include "student/widgets/comments_info.html" %}
+
+  {% include "student/widgets/commit_button.html" %}
 </div>
 {% endblock %}
