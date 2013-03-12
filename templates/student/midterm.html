@@ -8,6 +8,7 @@
   {% include "student/widgets/project_info.html" %}
   <br/>
   <!--Project Details-->
+  <blockquote>
   <div>
     <div class="page-header">
       <h3>项目内容</h3> 
@@ -36,8 +37,8 @@
       <textarea class="fill-form" rows="8" placeholder="计划..."></textarea>
     </fieldset>
     <br/>
-  </div>
-  
+  </div> 
+  </blockquote>
   <!--Project Results-->
   <!--Project Member Infomation-->
 <div >
@@ -99,6 +100,8 @@
 <!--Project Reviews-->
 {% include "student/widgets/comments_info.html" %}
 <br/>
+
+{% include "student/widgets/commit_button.html" %}
   
 </div>
 {% endblock %}
