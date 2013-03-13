@@ -20,6 +20,14 @@ urlpatterns = patterns('',
         direct_to_template, {'template': 'student/initial.html'}
     ),
     url(
+        r'^initial/1$',
+        direct_to_template, {'template': 'student/initial_1.html'}
+    ),
+    url(
+        r'^initial/2$',
+        direct_to_template, {'template': 'student/initial_2.html'}
+    ),
+    url(
         r'^midterm/$',
         direct_to_template, {'template': 'student/midterm.html'}
     ),

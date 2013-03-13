@@ -262,4 +262,4 @@ LOGGING = {
 }
 
 # Website settings
-WEB_TITLE = " Management"
+WEB_TITLE = "Management"
