@@ -21,6 +21,18 @@ div.oneline > p,a,address
   margin-left: 20px;
 }
 
+div.oneline-packed{
+  display: inline-block;
+  margin-left: 5px;
+  text-align: left;
+}
+
+div.oneline-packed >p
+{
+  display: inline-block;
+  margin-left: 2px;
+}
+
 textarea.fill-form{
   width: 90%;
   margin-left: 5px;
