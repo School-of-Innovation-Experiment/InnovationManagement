@@ -42,3 +42,7 @@ div.submit-btn{
   margin-right:100px;
 
 }
+
+#grid-elements{
+  display: inline;
+}
