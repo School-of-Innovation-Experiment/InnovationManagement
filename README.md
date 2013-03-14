@@ -6,6 +6,10 @@ A website for College students Innovation  Entrepreneurial  in Liaoning Province
 # Environment 
  * use Django 1.4.2:pip install Django==1.4.2
 
+# Add-on
+ * Django CMS: sudo pip install django-cms
+ * Admin Style: sudo pip install djangocms-admin-style 
+
 # How to install
 
  1. create database in mysql: create database Management character SET utf8;
