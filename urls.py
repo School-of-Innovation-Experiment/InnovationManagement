@@ -33,6 +33,11 @@ urlpatterns = patterns('',
         include('registration.urls'),
         name="accounts"
     ),
+      url(
+        r'^teacher/',
+        include('teacher.urls'),
+        name="teacher"
+    ),
     url(
         r'^student/',
         include('student.urls'),
@@ -73,4 +78,5 @@ urlpatterns = patterns('',
         #direct_to_template, {'template': 'widgets/settings/admin.html'},
         users_views.admin_account
     ),
+
 )
