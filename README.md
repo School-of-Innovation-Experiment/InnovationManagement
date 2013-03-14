@@ -4,7 +4,7 @@ InnovationManagement
 A website for College students Innovation  Entrepreneurial  in Liaoning Province 
 
 # Environment 
- * use Django 1.4.2:pip install Django==1.4.2
+ * Please, execute this cmd: **sudo pip install -r requirements.txt**
 
 # How to install
 

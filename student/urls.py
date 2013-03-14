@@ -39,8 +39,4 @@ urlpatterns = patterns('',
         r'^progress/$',
         direct_to_template, {'template': 'student/progress.html'}
     ),
-    url(
-        r'^finance/$',
-        direct_to_template, {'template': 'student/finance.html'}
-    ),
 )

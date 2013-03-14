@@ -1,0 +1,121 @@
+<!-- new-task page -->
+{% extends "student/base/_content.html" %}
+
+{% block calculate-content%}
+<div class="container">
+      <table class="table table-hover">
+       <caption><h3>大学生创新创业项目列表</h3></caption>
+         <thead>
+     <tr>
+    <th>ID</th>
+    <th>项目名称</th>
+    <th>项目类型</th>
+    <th>负责人</th>
+     <th>年级</th>
+     <th>专业</th>
+    <th>学号</th>
+    <th>团队成员</th>
+    <th>指导教师</th>
+    <th>项目审核状态</th>
+        <th>项目相关操作</th>
+    </tr>
+               </thead>
+       <tbody>
+      <tr>
+      <!--
+基于图像处理的投影键盘
+创新训练
+孙斌
+2009
+通信工程
+苏立德，钟一莲，尹玉颜，柴贺伟
+丁纪峰#
+-->
+       <td>1</td>
+       <td>基于图像处理的投影键盘</td>
+       <td>创新训练</td>
+       <td>孙斌</td>
+       <td>2009</td>
+        <td>通信工程</td>
+       <td>10202025</td>
+       <td>苏立德，钟一莲，尹玉颜，柴贺伟</td>
+       <td>丁纪峰</td>
+                   <td>
+            <span class="label label-success">Passed</span>
+          
+            </td>
+            <td>
+             <button type="button" class="btn btn-mini"><a href="initial">审核项目</a></button>
+             <button type="button" class="btn btn-mini"><a href="initial">更改项目</a></button>
+            
+            </td>
+    </tr>
+             <tr>
+           <!--基于单片机和Zigbee的无线自助点餐笔
+创新训练
+郭建宏
+2010
+通信工程
+杨奕国，吕雪，魏锋，黄余芳
+逄凌滨--> 
+       <td>2</td>
+       <td>基于单片机和Zigbee的无线自助点餐笔</td>
+       <td>创新训练</td>
+       <td>郭建宏</td>
+       <td>2010</td>
+        <td>通信工程</td>
+       <td>10202269</td>
+       <td>杨奕国，吕雪，魏锋，黄余芳</td>
+       <td>逄凌滨</td>
+           <td>
+            <span class="label label-success">Passed</span>
+          
+            </td>
+            <td>
+               <button type="button" class="btn btn-mini"><a href="initial">审核项目</a></button>
+             <button type="button" class="btn btn-mini"><a href="initial">更改项目</a></button>
+           
+            </td>
+       </tr>
+             <tr>
+             <!--自助导游系统
+创新训练
+陈阿雨
+2010
+电子信息工程
+朴美兰，刘丹，史航，王及元
+董玉华-->
+       <td>3</td>
+       <td>自助导游系统</td>
+       <td>创新训练</td>
+       <td>陈阿雨</td>
+       <td>2010</td>
+        <td>通信工程</td>
+       <td>10202269</td>
+       <td>杨奕国，吕雪，魏锋，黄余芳</td>
+       <td>逄凌滨</td>
+         <td>
+            <span class="label label-success">Passed</span>
+          
+            </td>
+            <td>
+               <button type="button" class="btn btn-mini"><a href="initial">审核项目</a></button>
+             <button type="button" class="btn btn-mini"><a href="initial">更改项目</a></button>
+            
+            </td>
+       </tr>
+       </tbody>
+
+    </table>
+</div>
+<div>
+
+<dl>
+  <dt>注意事项：</dt>
+  <dd class="text-error">1. 每个项目在提交之前必须进行指导教师审核。</dd>
+  <dd class="text-error">2. 对项目的修改和删除操作，请点“更改项目”进行操作。</dd>
+   
+</dl>
+
+</div>
+{% endblock %}
