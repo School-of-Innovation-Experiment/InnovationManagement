@@ -16,23 +16,23 @@ urlpatterns = patterns('',
         direct_to_template, {'template': 'teacher/home.html'}
     ),
     url(
-        r'^initial/$',
+        r'^initial$',
         direct_to_template, {'template': 'teacher/initial.html'}
     ),
     url(
-        r'^midterm/$',
+        r'^midterm$',
         direct_to_template, {'template': 'teacher/midterm.html'}
     ),
     url(
-        r'^final/$',
+        r'^final$',
         direct_to_template, {'template': 'teacher/final.html'}
     ),
     url(
-        r'^progress/$',
+        r'^progress$',
         direct_to_template, {'template': 'teacher/progress.html'}
     ),
     url(
-        r'^finance/$',
+        r'^finance$',
         direct_to_template, {'template': 'teacher/finance.html'}
     ),
     url(
