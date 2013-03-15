@@ -1,5 +1,5 @@
 <!-- new-task page -->
-{% extends "teacher/base/_content.html" %}
+{% extends "teacher/base/_content3.html" %}
 
 {% block calculate-content%}
  
@@ -7,89 +7,12 @@
  
  
  <div class="container">
-  <h1 align="center">欢迎来到大学生创新创业管理系统</h1>
   
-</div>
- <div class="container">
-      <table class="table table-hover">
-       <caption><h3>待审项目列表</h3></caption>
-         <thead>
-     <tr>
-    <th>编号</th>
-    <th>项目名称</th>
-    <th>项目类型</th>
-    <th>项目审核状态</th>
-    </tr>
-               </thead>
-       <tbody>
-      <tr>
-      <!--
-基于图像处理的投影键盘
-创新训练
-孙斌
-2009
-通信工程
-苏立德，钟一莲，尹玉颜，柴贺伟
-丁纪峰#
--->
-       <td>1</td>
-       <td>基于图像处理的投影键盘</td>
-       <td>创新训练</td>
-   
-      
-                   <td>
-            <span class="label label-warning">项目待审</span>
-                     <button type="button" class="btn btn-mini">修改</button>
-            <button type="button" class="btn btn-mini">删除</button>
-            </td>
-    </tr>
-             <tr>
-           <!--基于单片机和Zigbee的无线自助点餐笔
-创新训练
-郭建宏
-2010
-通信工程
-杨奕国，吕雪，魏锋，黄余芳
-逄凌滨--> 
-       <td>2</td>
-       <td>基于单片机和Zigbee的无线自助点餐笔</td>
-       <td>创新训练</td>
-          
-           <td>
-            <span class="label label-warning">项目待审</span>
-              <button type="button" class="btn btn-mini">修改</button>
-            <button type="button" class="btn btn-mini">删除</button>
-            </td>
-       </tr>
-             <tr>
-             <!--自助导游系统
-创新训练
-陈阿雨
-2010
-电子信息工程
-朴美兰，刘丹，史航，王及元
-董玉华-->
-       <td>3</td>
-       <td>自助导游系统</td>
-       <td>创新训练</td>
-       
-       
-        <td>
-             <span class="label label-warning">项目待审</span>
-           <button type="button" class="btn btn-mini">修改</button>
-            <button type="button" class="btn btn-mini">删除</button>
-            </td>
-        </td>
-       </tr>
-       </tbody>
-
-    </table>
-</div>
 <div>
 
 <dl>
   <dt>注意事项：</dt>
-  <dd class="text-error">请指导教师按照下面内容提交项目信息。</dd>
+  <dd class="text-error">在项目通过院系审核前，无法提交学生负责人相关信息。</dd>
    
 </dl>
 
@@ -113,7 +36,10 @@
 
    <textarea rows="3" style="margin: 0px; width: 1050px; height: 328px;" placeholder="项目内容介绍（不少于500字）"></textarea>   
      </div>
-     
+     <label class="control-label" for="inputStudentEmail"><strong>学生姓名：</strong></label>
+     <input class="span2" type="text" id="inputStudentEmail" placeholder="学生姓名"> 
+        <label class="control-label" for="inputStudentEmail"><strong>学生负责人邮箱：</strong></label>
+     <input class="span8" type="text" id="inputStudentEmail" placeholder="学生负责人邮箱（重要）:qweqwe@mail.dlut.edu.cn"> 
  
  </form>
  

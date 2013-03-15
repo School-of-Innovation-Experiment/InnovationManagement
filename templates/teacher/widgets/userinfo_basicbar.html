@@ -2,13 +2,16 @@
 
 <div class="container">
 	<div class="btn-group pull-right">
-		<a href="/history" rel="tooltip" class="btn btn-info"><i class="icon-star"></i>Total</a>
-		<a href="/history" class="user-count">30<a>
+	
+		<label>用户角色选择：</label>
+
+	
+		<button type="button" class="btn btn-info"><a href="/teacher/initial" >项目指导教师</a></button>
+		<button type="button" class="btn btn-danger"><a href="/expert/home" >项目评审专家</a></button>
 	</div>
 	<div class="btn-group">
 		<a href="/settings/profile" class="user-info">{{request.user.username}}</a>
-		<a href="/settings/profile" class="label label-important user-info-label">VIP</a>
-		<a href="/settings/profile" class="label user-info-label">Level 1</a>
+				
 	</div>
 </div>
 

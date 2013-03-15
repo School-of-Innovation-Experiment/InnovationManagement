@@ -1,107 +1,80 @@
 <!-- new-task page -->
-{% extends "student/base/_content.html" %}
+{% extends "teacher/base/_content2.html" %}
 
 {% block calculate-content%}
 <div class="container">
+<h2>当前项目列表</h2>
+	<div class="btn-group pull-right">
+	
+	 <button type="button" class="btn"><a href="/teacher/projectapp" >新增项目+</a></button>
+	
+		
+	
+	</div>
+
+
       <table class="table table-hover">
-       <caption><h3>大学生创新创业项目列表</h3></caption>
+      
          <thead>
      <tr>
-    <th>ID</th>
+    <th>编号</th>
     <th>项目名称</th>
     <th>项目类型</th>
-    <th>负责人</th>
-     <th>年级</th>
-     <th>专业</th>
-    <th>学号</th>
-    <th>团队成员</th>
-    <th>指导教师</th>
-    <th>项目审核状态</th>
-        <th>项目相关操作</th>
+     <th>学生负责人</th>
+        <th>项目状态</th>
+<th>项目级别</th>
     </tr>
                </thead>
        <tbody>
       <tr>
-      <!--
-基于图像处理的投影键盘
-创新训练
-孙斌
-2009
-通信工程
-苏立德，钟一莲，尹玉颜，柴贺伟
-丁纪峰#
--->
+
        <td>1</td>
        <td>基于图像处理的投影键盘</td>
        <td>创新训练</td>
-       <td>孙斌</td>
-       <td>2009</td>
-        <td>通信工程</td>
-       <td>10202025</td>
-       <td>苏立德，钟一莲，尹玉颜，柴贺伟</td>
-       <td>丁纪峰</td>
+      <td>刘留</td>
+      <td> <span class="label label-success">通过审查</span></td>
+      
                    <td>
-            <span class="label label-success">Passed</span>
-          
-            </td>
-            <td>
-             <button type="button" class="btn btn-mini"><a href="initial">审核项目</a></button>
-             <button type="button" class="btn btn-mini"><a href="initial">更改项目</a></button>
-            
+            <span class="label label-important">国家级</span>
+           <button type="button" class="btn btn-mini"><a href="studentcharge">指派学生负责人</a></button>
             </td>
     </tr>
              <tr>
-           <!--基于单片机和Zigbee的无线自助点餐笔
-创新训练
-郭建宏
-2010
-通信工程
-杨奕国，吕雪，魏锋，黄余芳
-逄凌滨--> 
+
        <td>2</td>
        <td>基于单片机和Zigbee的无线自助点餐笔</td>
        <td>创新训练</td>
-       <td>郭建宏</td>
-       <td>2010</td>
-        <td>通信工程</td>
-       <td>10202269</td>
-       <td>杨奕国，吕雪，魏锋，黄余芳</td>
-       <td>逄凌滨</td>
+          <td>逄凌滨</td>  
+            <td> <span class="label label-success">通过审查</span></td>
            <td>
-            <span class="label label-success">Passed</span>
-          
-            </td>
-            <td>
-               <button type="button" class="btn btn-mini"><a href="initial">审核项目</a></button>
-             <button type="button" class="btn btn-mini"><a href="initial">更改项目</a></button>
-           
+             <span class="label label-info">省级</span>
+           <button type="button" class="btn btn-mini">指派学生负责人</button>
             </td>
        </tr>
              <tr>
-             <!--自助导游系统
-创新训练
-陈阿雨
-2010
-电子信息工程
-朴美兰，刘丹，史航，王及元
-董玉华-->
+     
        <td>3</td>
        <td>自助导游系统</td>
        <td>创新训练</td>
-       <td>陈阿雨</td>
-       <td>2010</td>
-        <td>通信工程</td>
-       <td>10202269</td>
-       <td>杨奕国，吕雪，魏锋，黄余芳</td>
-       <td>逄凌滨</td>
-         <td>
-            <span class="label label-success">Passed</span>
-          
+       
+       <td>刘丹</td>
+         <td> <span class="label label-success">通过审查</span></td>
+        <td>
+           <span class="label label">校级</span>
+           <button type="button" class="btn btn-mini">指派学生负责人</button>
             </td>
-            <td>
-               <button type="button" class="btn btn-mini"><a href="initial">审核项目</a></button>
-             <button type="button" class="btn btn-mini"><a href="initial">更改项目</a></button>
+        </td>
+       </tr>
+                    <tr>
+
+       <td>2</td>
+       <td>基于ABC</td>
+       <td>创新训练</td>
+          <td>逄凌滨</td>  
+            <td> <span class="label label-warning">等待审查</span></td>
+           <td>
             
+          
             </td>
        </tr>
        </tbody>
@@ -112,10 +85,65 @@
 
 <dl>
   <dt>注意事项：</dt>
-  <dd class="text-error">1. 每个项目在提交之前必须进行指导教师审核。</dd>
-  <dd class="text-error">2. 对项目的修改和删除操作，请点“更改项目”进行操作。</dd>
+  <dd class="text-error">若项目指导教师尚无指派项目学生负责人，则首先请点击上面列表中右侧，项目对应的按钮指派学生负责人。</dd>
    
 </dl>
 
+</div>
+<div class="container">
+<h2>历史项目列表</h2>
+      <table class="table table-hover">
+       
+         <thead>
+     <tr>
+    <th>编号</th>
+    <th>项目名称</th>
+    <th>项目类型</th>
+     <th>学生负责人</th>
+        <th>年代</th>
+<th>项目级别</th>
+    </tr>
+               </thead>
+       <tbody>
+      <tr>
+
+       <td>1</td>
+       <td>基于图像处理的投影键盘</td>
+       <td>创新训练</td>
+      <td>刘留</td>
+       <td>2011</td>
+                   <td>
+            <span class="label label-important">国家级</span>
+          
+            </td>
+    </tr>
+             <tr>
+
+       <td>2</td>
+       <td>基于单片机和Zigbee的无线自助点餐笔</td>
+       <td>创新训练</td>
+          <td>逄凌滨</td>  
+            <td>2010</td>
+           <td>
+             <span class="label label-info">省级</span>
+          
+            </td>
+       </tr>
+             <tr>
+     
+       <td>3</td>
+       <td>自助导游系统</td>
+       <td>创新训练</td>
+       
+       <td>刘丹</td>
+         <td>2009</td>
+        <td>
+           <span class="label label">校级</span>
+                      </td>
+        </td>
+       </tr>
+       </tbody>
+
+    </table>
 </div>
 {% endblock %}

@@ -1,88 +1,23 @@
 <!-- new-task page -->
-{% extends "teacher/base/_content.html" %}
+
+
+ 
+   
+{% extends "teacher/base/_content1.html" %}
+
 
 {% block calculate-content%}
-<div class="container">
-      <table class="table table-hover">
-       <caption><h3>通过审查项目列表</h3></caption>
-         <thead>
-     <tr>
-    <th>编号</th>
-    <th>项目名称</th>
-    <th>项目类型</th>
-    <th>指导教师</th>
-    <th>项目审核状态</th>
-    </tr>
-               </thead>
-       <tbody>
-      <tr>
-      <!--
-基于图像处理的投影键盘
-创新训练
-孙斌
-2009
-通信工程
-苏立德，钟一莲，尹玉颜，柴贺伟
-丁纪峰#
--->
-       <td>1</td>
-       <td>基于图像处理的投影键盘</td>
-       <td>创新训练</td>
-      <td>逄凌滨</td>
-      
-                   <td>
-            <span class="label label-success">Passed</span>
-           <button type="button" class="btn btn-mini"><a href="studentcharge">指派学生负责人</a></button>
-            </td>
-    </tr>
-             <tr>
-           <!--基于单片机和Zigbee的无线自助点餐笔
-创新训练
-郭建宏
-2010
-通信工程
-杨奕国，吕雪，魏锋，黄余芳
-逄凌滨--> 
-       <td>2</td>
-       <td>基于单片机和Zigbee的无线自助点餐笔</td>
-       <td>创新训练</td>
-          <td>逄凌滨</td>  
-           <td>
-           <span class="label label-success">Passed</span>
-           <button type="button" class="btn btn-mini">指派学生负责人</button>
-            </td>
-       </tr>
-             <tr>
-             <!--自助导游系统
-创新训练
-陈阿雨
-2010
-电子信息工程
-朴美兰，刘丹，史航，王及元
-董玉华-->
-       <td>3</td>
-       <td>自助导游系统</td>
-       <td>创新训练</td>
-       
-       <td>逄凌滨</td>
-        <td>
-           <span class="label label-success">Passed</span>
-           <button type="button" class="btn btn-mini">指派学生负责人</button>
-            </td>
-        </td>
-       </tr>
-       </tbody>
 
-    </table>
-</div>
-<div>
+<div class="container">
+   <h1 align="center">欢迎来到大学生创新创业管理系统</h1>
+ </div>
+ <div>
 
 <dl>
   <dt>注意事项：</dt>
-  <dd class="text-error">若项目指导教师尚无指派项目学生负责人，则首先请点击上面列表中右侧，项目对应的按钮指派学生负责人。</dd>
+  <dd class="text-error">请首先选择右上角登录用户的角色，再进行后续操作！</dd>
    
 </dl>
 
 </div>
-
 {% endblock %}
