@@ -19,7 +19,7 @@ handler500 = 'djangotoolbox.errorviews.server_error'
 
 urlpatterns = patterns('',
     url(
-        r'^$',
+        r'^home$',
         direct_to_template, {'template': 'home/index.html'},
         name='index'
     ),
@@ -79,4 +79,8 @@ urlpatterns = patterns('',
         users_views.admin_account
     ),
 
+    url(
+        r'^',
+        include('cms.urls')
+    ),
 )
