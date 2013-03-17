@@ -97,6 +97,7 @@ TEMPLATE_LOADERS = (
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -145,6 +146,7 @@ INSTALLED_APPS = (
     'users',
     #Add-on
     'debug_toolbar',
+    'tinymce',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -205,7 +207,7 @@ TMP_FILE_PATH = join(SETTINGS_ROOT, 'tmp/')
 #APPEND_SLASH=False
 
 #Debug
-INTERNAL_IPS = ('192.168.2.218', '192.168.2.103')
+INTERNAL_IPS = ('192.168.2.218','localhost','192.168.2.7','127.0.0.1')
 
 DEBUG_TOOLBAR_PANELS = (
     'debug_toolbar.panels.version.VersionDebugPanel',
