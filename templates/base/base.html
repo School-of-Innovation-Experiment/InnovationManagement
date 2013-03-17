@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
     <title>Chemistry Tools</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {% block meta_description %}
-    <meta name="description" content="" />
+      <meta name="description" content="" />
     {% endblock %}
     <meta name="keywords" content="" />
-    <meta name="author" content="tianwei" >
+    <meta name="author" content="tianwei" />
 
     <!-- CSS Config. -->
     {% block before_css %}{% endblock  %}
@@ -21,18 +21,25 @@
     {% block forejs %}{% endblock %}
   </head>
 
-    <body >
-		{# navigator bar#}
-		
-		{% include "widgets/navbar.html" %}
-		
-        {# Main-Content Section #}
-        {% block content %}{% endblock %}
+  <body >
+    {# navigator bar#}
 
-        {# Footer Section #}
-        {% include "widgets/footer.html" %}
-        {% include "meta/bottom_scripts.html" %}
-        {% block endjs %}{% endblock %}    
-	</body>
+    {% include "widgets/navbar.html" %}
 
+    {# Main-Content Section #}
+    {% block content %}{% endblock %}
+
+    {# Footer Section #}
+    {% include "widgets/footer.html" %}
+    {% include "meta/bottom_scripts.html" %}
+    {% block endjs %}{% endblock %}
+    {% block footer-alert-bar %}
+      <div class="alert footer-alert-bar">
+        <marquee scrollamount="2">
+          {% block footer-alert-content %}
+          {% endblock %}
+        </marquee>
+      </div>
+    {% endblock %}
+  </body>
 </html>
