@@ -146,6 +146,8 @@ INSTALLED_APPS = (
     'users',
     #Add-on
     'debug_toolbar',
+    'tinymce',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -266,3 +268,12 @@ LOGGING = {
 
 # Website settings
 WEB_TITLE = "Management"
+
+# TinyMCE settings
+TINYMCE_JS_URL = os.path.join(STATIC_ROOT, "tiny_mce/tiny_mce.js")
+TINYMCE_JS_ROOT = os.path.join(STATIC_ROOT, "tiny_mce")
+TINYMCE_DEFAULT_CONFIG = {
+        'theme':'advanced',
+        'cleanup_on_startup':True,
+        'custom_undo_redo_levels': 10,
+}

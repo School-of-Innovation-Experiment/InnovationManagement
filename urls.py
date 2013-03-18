@@ -54,6 +54,11 @@ urlpatterns = patterns('',
         name="staff"
         ),
     url(
+        r'^news/',
+        include('news.urls'),
+        name="news"
+    ),
+    url(
         r'^newtask/$',
         direct_to_template, {'template': 'features/newtask.html'},
         #gui_views.basic_search
@@ -89,4 +94,8 @@ urlpatterns = patterns('',
         users_views.admin_account
     ),
 
+)
+
+urlpatterns += patterns('',
+    url(r'tinymce/', include('tinymce.urls')),
 )
