@@ -1,5 +1,6 @@
 *.py[cod]
 *~
+media/cms-media/*
 
 log/*
 # C extensions
