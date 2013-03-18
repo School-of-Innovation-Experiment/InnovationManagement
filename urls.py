@@ -49,6 +49,11 @@ urlpatterns = patterns('',
         name="expert"
     ),
     url(
+        r'^academicStaff/',
+        include('academicStaff.urls'),
+        name="staff"
+        ),
+    url(
         r'^newtask/$',
         direct_to_template, {'template': 'features/newtask.html'},
         #gui_views.basic_search

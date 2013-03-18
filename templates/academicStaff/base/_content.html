@@ -1,0 +1,22 @@
+<!--content for calculate, layout, basic widgets-->
+
+{% extends "base/base.html" %}
+{% load i18n %}
+
+{% block content %}
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/index.css" >
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/content.css" >
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/accounts_form.css" >
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/accounts_form.css" >
+		<link href = "{{ STATIC_URL }}staff_static/bootstrap/css/bootstrap.css" rel = "stylesheet" type="text/css">
+		<link href = "{{ STATIC_URL }}staff_static/bootstrap/css/bootstrap.min.css" rel = "stylesheet" type="text/css">
+		<link href = "{{ STATIC_URL }}staff_static/bootstrap/css/bootstrap-responsive.css" rel = "stylesheet" type="text/css">
+		<link href = "{{ STATIC_URL }}staff_static/style.css" rel = "stylesheet" type="text/css">
+		<script src = "{{ STATIC_URL }}staff_static/jquery.js"> </script>
+		<script src = "{{ STATIC_URL }}staff_static/json2.js"> </script>
+		<script src = "{{ STATIC_URL }}staff_static/bootstrap/js/bootstrap.js"> </script>
+		<script src = "{{ STATIC_URL }}staff_static/bootstrap/js/bootstrap.min.js"> </script>
+  <!-- customize css -->
+  <link rel="stylesheet" href="{{ STATIC_URL}}style/expert/content.css" type="text/css" media="screen" >
+  <div class="container form-container ">{%block staffadmin_content%} {% endblock %}</div>
+{% endblock %}

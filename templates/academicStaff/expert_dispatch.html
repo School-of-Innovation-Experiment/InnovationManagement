@@ -1,0 +1,112 @@
+
+		<div class="span6">
+			<h4>分配以及查看任务</h4>
+			<div class="accordion">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#EcollapseOne">
+                  为专家分配帐号
+                </a>
+              </div>
+              <div id="EcollapseOne" class="accordion-body in" style="height: auto;">
+                <div class="accordion-inner">
+					<div class="well">
+					<div class="control-group">
+						<div class="input-prepend">
+							<span class="add-on"><i class="icon-user"></i></span><input type="text" class="input-small" id="expert_name" placeholder="专家姓名">
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="input-prepend">
+							<span class="add-on"><i class="icon-envelope"></i></span><input class="span2" type="text" id="expert_mail" style="margin:0;" placeholder="邮箱">
+						</div>
+					</div>
+					<div class="control-group">
+					    <label class="control-label" for="multiSelect">院系选择</label>
+						    <div class="controls">
+						      <select  id="expert_faculty">
+								<option>电信学院</option>
+								<option>化学材料</option>
+								<option>热力动能</option>
+								<option>管理经济</option>	
+						      </select>
+						    </div>
+					</div>
+					<div class="form-actions">
+						    <button class="btn btn-primary" onclick="get_experts_info()">增加</button>
+						    <button class="btn">取消</button>
+					</div>
+				</div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#EcollapseTwo">
+                  查看授权专家列表
+						<span id = "expertadd" class="num">0</span>
+					 </a>               
+              </div>
+              	<div id="EcollapseTwo" class="accordion-body collapse" style="height: 0px;">
+                	<div class="accordion-inner">
+                	<div>
+                	<table id="expert_table" class="table  table-striped" >
+						<thead>
+						<tr>
+						<th>专家姓名</th>
+						<th>所属院系</th>
+						<th>专家邮箱</th>
+						</tr>			
+						</thead>
+						<tbody>
+						</tbody>
+						</table>
+						</div>
+						<div>
+						<button class="btn btn-info" id="instructor_send" href="#">给授权专家发送邮件</button>
+						</div>   
+                	</div>
+              	</div>
+              </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#EcollapseThree">
+                  已激活授权专家名单
+                </a>
+              </div>
+              <div id="EcollapseThree" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+          exp_num        = 0;
+          expert_List     = {}
+          function get_experts_info()
+          {
+				exp_num = exp_num + 1
+				document.getElementById("expertadd").innerHTML = exp_num; 
+				expert_name  = document.getElementById("expert_name").value;
+				mailbox      = document.getElementById("expert_mail").value;
+  				x            = document.getElementById("expert_faculty")
+  				faculty      = x.options[x.selectedIndex].text 
+  								
+  				table               = document.getElementById("expert_table").insertRow(1)
+  				e_name              = table.insertCell(0)
+  				e_name.innerHTML    = expert_name
+  				e_faculty           = table.insertCell(1)
+  				e_faculty.innerHTML = faculty
+  				e_mail              = table.insertCell(2)
+  				e_mail.innerHTML    = mailbox
+  				/*
+  				生成json字符串
+  				*/
+  				expert_List["name"]    = expert_name
+  				expert_List["faculty"] = faculty
+  				expert_List["mail"]    = mailbox
+  				
+          }
+          </script>
+         </div>
+      </div>
