@@ -8,6 +8,7 @@ log/*
 
 *.swp
 *.swo
+*.orig
 
 # Packages
 *.egg
