@@ -1,5 +1,6 @@
 *.py[cod]
 *~
+media/cms-media/*
 
 log/*
 # C extensions
@@ -38,3 +39,5 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+.orig
+*#

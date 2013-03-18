@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# coding: UTF-8
 '''
 Created on 2012-11-10
 
@@ -108,19 +108,19 @@ class RegistrationManager(models.Manager):
     def delete_expired_users(self):
         """
         Remove expired instances of ``RegistrationProfile`` and their associated ``User``s.
-        
+
         It is recommended that this method be executed regularly as
         part of your routine site maintenance; this application
         provides a custom management command which will call this
         method, accessible as ``manage.py cleanupregistration``.
-        
-        """    
+
+        """
         for profile in self.all():
             if profile.activation_key_expired():
                 user = profile.user
                 if not user.is_active:
                     user.delete()
-                    
+
 class RegistrationProfile(models.Model):
     """
     A simple profile which stores an activation key for use during user account registration

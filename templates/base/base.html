@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     {% endblock %}
     <meta name="keywords" content="" />
-    <meta name="author" content="tianwei" >
+    <meta name="author" content="sytmac" >
 
     <!-- CSS Config. -->
     {% block before_css %}{% endblock  %}
@@ -33,6 +33,14 @@
         {% include "widgets/footer.html" %}
         {% include "meta/bottom_scripts.html" %}
         {% block endjs %}{% endblock %}    
-	</body>
+       {% block footer-alert-bar %}
+      <div class="alert footer-alert-bar">
+        <marquee scrollamount="2">
+          {% block footer-alert-content %}
+          {% endblock %}
+        </marquee>
+      </div>
+    {% endblock %}
 
+	</body>
 </html>
