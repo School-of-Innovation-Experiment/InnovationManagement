@@ -1,9 +1,9 @@
 <!-- new-task page -->
-{% extends "student/base/_content.html" %}
+{% extends "teacher/base/_content2.html" %}
 
 {% block calculate-content%}
+
 <div class="container">
-  new task
-  <button class="btn btn-info">New button</button>
+ {% include "student/finance.html" %}
 </div>
 {% endblock %}
