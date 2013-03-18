@@ -146,6 +146,7 @@ INSTALLED_APPS = (
     'users',
     #Add-on
     'debug_toolbar',
+    'tinymce',
 )
 
 # A sample logging configuration. The only tangible logging

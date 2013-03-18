@@ -1,3 +1,4 @@
 django==1.4.2
+django-tinymce
 django-cms
 djangocms-admin-style
