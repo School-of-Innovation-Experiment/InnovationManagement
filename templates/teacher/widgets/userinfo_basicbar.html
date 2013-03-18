@@ -2,12 +2,14 @@
 
 <div class="container">
 	<div class="btn-group pull-right">
-	
-		<button type="button" class="btn btn-info" href="/teacher/" >指导教师 </button>
-		<button type="button" class="btn btn-danger"  href="/expert/home" >评审专家 </button>
+		<button type="button" class="btn btn-info"  href="/teacher/" >指导教师</button>
+		<button type="button" class="btn btn-danger"  href="/expert/home" >评审专家</button>
 	</div>
 	<div class="btn-group">
 		<a href="/settings/profile" class="user-info">{{request.user.username}}</a>
+		
+		<a href="/settings/profile" class="label label-important user-info-label">指导教师</a>
+
 				
 	</div>
 </div>
