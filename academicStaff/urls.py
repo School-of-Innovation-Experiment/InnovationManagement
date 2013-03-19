@@ -8,8 +8,8 @@ from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template
 urlpatterns = patterns('',
     url(
-        r'^expert_dipatch/$',
-        direct_to_template, {'template': 'academicStaff/expert_dipatch.html'}
+        r'^expert_dispatch/$',
+        direct_to_template, {'template': 'academicStaff/expert_dispatch.html'}
     ),
     url(
         r'^basic_info/$',
@@ -30,5 +30,9 @@ urlpatterns = patterns('',
     url(
         r'^$',
         direct_to_template, {'template': 'academicStaff/administrator.html'}
+    ),
+    url(
+        r'^settings$',
+        direct_to_template, {'template': 'academicStaff/settings.html'}
     ),
 )

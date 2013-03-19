@@ -54,6 +54,11 @@ urlpatterns = patterns('',
         name="staff"
         ),
     url(
+        r'^facultyStaff/',
+        include('facultyStaff.urls'),
+        name="staff"
+        ),
+    url(
         r'^news/',
         include('news.urls'),
         name="news"

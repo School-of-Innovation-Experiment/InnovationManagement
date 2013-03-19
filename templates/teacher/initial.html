@@ -1,12 +1,10 @@
 <!-- new-task page -->
-{% extends "teacher/base/_content2.html" %}
+{% extends "teacher/base/_content.html" %}
 
 {% block calculate-content%}
 
-<div class="container">
-    <div class="container-fluid">
     <div class="row-fluid">
-  <div class="span2 well bs-docs-sidebar" style="padding: 8px 0;>
+  <div class="span3 well bs-docs-sidebar" style="padding: 8px 0;>
   <ul class="nav nav-list bs-docs-sidenav">
   <li><a href="#global" data-toggle="tab"><i class="icon-chevron-right"></i> 新型家用应急逃生锁</a></li>
   <li><a href="#global" data-toggle="tab"><i class="icon-chevron-right"></i> 项目2</a></li>
@@ -14,10 +12,11 @@
   <li><a href="#global" data-toggle="tab"><i class="icon-chevron-right"></i> 项目4</a></li>
   <li><a href="#global" data-toggle="tab"><i class="icon-chevron-right"></i> 项目5</a></li>
   <li><a href="/teacher/initial"><i class="icon-chevron-right"></i> 返回</a></li>
-   </ul>
-        </div>
+  </ul>
       
-        <div class="span9 container">
+  </div>
+      
+        <div class="span9">
         <h2>请指导教师对左侧列表中的项目申请信息进行审核</h2>
 <dl>
   <dt>注意事项：</dt>
@@ -28,18 +27,18 @@
         
         
         </div>
-      <div class="tab-pane fade span9 container" id="global">
+      <div class="tab-pane fade span9" id="global">
              
                 
       
-     {% include "student/widgets/innovation_init.html" %}
+      {% include "student/widgets/innovation_init.html" %}
      </div>  
           
-		 
+    	 
 	     
          
       
 </div>
-</div>
+
 
 {% endblock %}
