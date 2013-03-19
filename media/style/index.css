@@ -57,7 +57,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .carousel .container {
@@ -66,7 +66,8 @@ body {
 }
 
 .carousel-control {
-  height: 80px;
+    top: 35%;
+  height: 50px;
   margin-top: 0;
   font-size: 120px;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
@@ -75,14 +76,14 @@ body {
 }
 
 .carousel .item {
-  height: 500px;
+  height: 310px;
 }
 .carousel img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 310px;
 }
 
 .carousel-caption {
@@ -90,7 +91,7 @@ body {
   position: static;
   max-width: 550px;
   padding: 0 20px;
-  margin-top: 200px;
+  margin-top: 160px;
 }
 .carousel-caption h1,
 .carousel-caption .lead {
@@ -166,15 +167,6 @@ body {
     border-radius: 0;
     margin: -20px 0;
   }
-
-  .carousel .item {
-    height: 500px;
-  }
-  .carousel img {
-    width: auto;
-    height: 500px;
-  }
-
   .featurette {
     height: auto;
     padding: 0;
@@ -196,17 +188,11 @@ body {
   }
 
   .carousel {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .carousel .container {
 
-  }
-  .carousel .item {
-    height: 300px;
-  }
-  .carousel img {
-    height: 300px;
   }
   .carousel-caption {
     width: 65%;
@@ -276,7 +262,6 @@ p.plan{
 	text-align: center;
 	font-size: 11px;
 }
-
 li.nav-li{
 	width:36px;
 	float:left;
