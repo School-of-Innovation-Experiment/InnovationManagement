@@ -1,30 +1,20 @@
 {% extends "academicStaff/base/_content.html" %}
 {% block staffadmin_content %}
-		</header>
-		<div class ="tabtable tabs-left">
-			<ul class = "nav nav-tabs">
-				<li >
-					<a href="#basic-infomation"  data-toggle="tab">我的基本信息</a>
-				</li>
-				<li >
-					<a href="#password-admin" data-toggle="tab">修改密码</a>
-				</li>
-				<li >
-					<a href="#teacher-dispatch" data-toggle="tab">教师分配</a>
-				</li>
-				<li >
-					<a href="#expert-dispatch" data-toggle="tab">专家分配</a>
-				</li>
-				<li >
-					<a href="#subject-admin" data-toggle="tab">题目反馈<span id = "project_num" class="num">4</span> </a>
-				</li>				
-			</ul>
-			<div class="tab-content">
-				<div class="tab-pane fade " id="basic-infomation">{% include "academicStaff/basic_info.html"%}</div>
-				<div class="tab-pane fade" id="password-admin">{% include "academicStaff/password_admin.html"%}</div>
-				<div class="tab-pane fade " id="subject-admin">{% include "academicStaff/subject_feedback.html" %}</div>
-				<div class="tab-pane fade" id="teacher-dispatch">{% include "academicStaff/teacher_dispatch.html"%}</div>
-				<div class="tab-pane fade " id="expert-dispatch">{% include "academicStaff/expert_dispatch.html"%}</div>
+	<div class="container">
+		<div class="navbar ">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li><a href="/academicStaff/teacher_dispatch">指导教师激活</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="/academicStaff/expert_dispatch">评审专家激活</a></li>
+					<li class="divider-vertical"></li>
+	        <li><a href="/academicStaff/subject_feedback">参赛题目反馈<span id = "project_num" class="num">4</span></a></li>
+	        <li><a href="/academicStaff/settings">基本信息设置</a></li>
+				</ul>
 			</div>
 		</div>
+		<div class="container">
+			{%block nav_admin_content%}{%endblock%}
+		</div>	
+	</div>
 {%endblock%}

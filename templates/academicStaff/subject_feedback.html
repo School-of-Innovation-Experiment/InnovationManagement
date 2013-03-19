@@ -1,43 +1,72 @@
-
-<h4> 指导教师反馈题目</h4>
+{% extends "academicStaff/administrator.html" %}
+{%block nav_admin_content%}
+	<div class="well form-inline">
+		<span><strong>按照院系进行显示</strong></span>
+	  <select id="faculty_search" style="vertical-align:middle;">
+	  <option class="bottom" selected="True">全部题目</option>
+		<option>电信学院</option>
+		<option>化学材料</option>
+		<option>热力动能</option>
+		<option>管理经济</option>	
+	  </select>
+	  <button class="btn btn-primary">筛选</button>
 	<table class="table table-condensed">
 	<thead>
 	<tr>
 		<th>发布题目名称</th>
 		<th>所属院系</th>
+		<th>所属分类</th>
 		<th>指导教师名称</th>
 		<th>已分配专家数目</th>
-		<th>指定专家进行评审</th>
 	</tr>
 	</thead>
 	<tbody>
 	<tr class="warning">
 		<td>污水治理</td>
-		<td>化工学院</td>
+		<td>化学材料</td>
+		<td>创业</td>
 		<td>宋小宝</td>
 		<td>3</td>
-		<td><a href="#">选择专家</a><td>
 	</tr>
 	<tr class="warning">
 		<td>污水治理</td>
-		<td>化工学院</td>
+		<td>化学材料</td>
+		<td>创业</td>
 		<td>宋小宝</td>
 		<td>3</td>
-		<td><a href="#">选择专家</a><td>
 	</tr>
 	<tr class="warning">
 		<td>污水治理</td>
-		<td>化工学院</td>
+		<td>化学材料</td>
+		<td>创新</td>
 		<td>宋小宝</td>
 		<td>3</td>
-		<td><a href="#">选择专家</a><td>
 	</tr>
 	<tr class = "success">
 		<td>高维时间序列挖掘</td>
 		<td>计算机学院</td>
+		<td>创新</td>
 		<td>宋大宝</td>
 		<td>3</td>
-		<td><a href="#">选择专家</a><td>
 	</tr>
 	</tbody>
 	</table>
+	<div id="myModal" class="modal hide fade">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>对话框标题</h3>
+            </div>
+            <div class="modal-body">
+              <h4>对话框文字</h4>
+              <p>
+		高考临近，湖北孝感惊现史上最刻苦“吊瓶班”。这是昨日孝感市第一高级中学某晚自习教室的一幕，"吊瓶高考班"轰动全校！不知台上的老师面对如此震撼的场面和沁人心脾的药水味，如何站稳脚跟hold住全场呢？该校学生表示，备战高考，补充能量挨几针也是值得的，你hold住了吗？
+	      			</p>
+						</div>
+            <div class="modal-footer">
+              <a href="#" class="btn" data-dismiss="modal">关闭</a>
+              <a href="#" class="btn btn-primary">保存更改</a>
+            </div>
+  </div>
+	<button data-toggle="modal" href="#myModal" class="btn btn-primary">指定专家进行审阅</button>
+	</div>
+{%endblock%}
