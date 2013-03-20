@@ -35,4 +35,8 @@ urlpatterns = patterns('',
         r'^settings$',
         direct_to_template, {'template': 'academicStaff/settings.html'}
     ),
+    url(
+        r'^fund/$',
+        direct_to_template, {'template': 'academicStaff/fund.html'}
+    ),
 )
