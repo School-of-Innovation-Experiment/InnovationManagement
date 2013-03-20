@@ -16,7 +16,9 @@ ul, ol{
     /* min-height: 500px; */
     /* height: auto !important; */
     height: 578px;
-    width: 1203px;
+    /* width: 1203px; */
+    min-width: 1203px;
+    width: 70%;
 }
 .home-title {
     height: 95px;
@@ -34,7 +36,9 @@ ul, ol{
     color: rgba(255, 255, 255, 0.3);
 }
 .home-aside {
-    width: 192px;
+    /* width: 192px; */
+    width: 15%;
+    min-width: 192px;
     padding-left: 0px;
     padding-bottom: 20px;
     margin-top: 8px;
