@@ -33,13 +33,19 @@
             </li>
           </ul>
           <hr />
+          <hr />
+
           <ul>
+            {% if request.user.is_authenticated %}
             <li>
               <a href="settings/profile">profile</a>
             </li>
             <li>
-              <a href="account/logout">logout</a>
+              <a href="accounts/logout">logout</a>
             </li>
+            {% else %}
+      		  <li ><a href="/accounts/login">Sign in</a></li>
+            {% endif%}
           </ul>
         </div>
         <div class="home-link">
