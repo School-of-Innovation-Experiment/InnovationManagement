@@ -12,15 +12,15 @@ active
     <form method="post" action=".">
       {% csrf_token %}
 		  <div class="modal-body">
-			 <label class="settings-label">Name</label>
+			 <label class="settings-label">姓名</label>
           {{ form.name }} 
           <span class="form-error help-inline">{{form.name.errors}}</span>
     		 <br/>
-    		 <label class="settings-label">Email</label>
+    		 <label class="settings-label">邮箱</label>
          {{ form.email }}
           <span class="form-error help-inline">{{form.email.errors}}</span>
     		 <br/>
-    		 <label class="settings-label">Telephone</label>
+    		 <label class="settings-label">电话</label>
          {{ form.telephone }}
           <span class="form-error help-inline">{{form.telephone.errors}}</span>
     		 <br/>
@@ -40,7 +40,7 @@ active
 			<h3><b>Machine Information</b></h3>
 		</div>
 		  <div class="modal-body">
-			   <label class="settings-label">Machine Code</label>
+			   <label class="settings-label">验证码</label>
          {{ form.machinecode }}
           <span class="form-error help-inline">{{form.machinecode.errors}}</span>
     		 <br/>
@@ -50,7 +50,7 @@ active
     		 <br/>
       </div>
       <div class="modal-footer">
-			  <button type="submit" class="btn btn-primary">Save changes</button>
+			  <button type="submit" class="btn btn-primary">保存修改</button>
 		  </div>
     </form>
 	</div>

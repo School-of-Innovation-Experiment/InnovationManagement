@@ -14,8 +14,8 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/features">About</a></li>
+                <li class="active"><a href="/">主页</a></li>
+                <li><a href="/features">关于</a></li>
               </ul>
       		  <ul class="nav pull-right  ">
       		  	{% if request.user.is_authenticated %}
@@ -35,9 +35,9 @@
       		  			<i class="icon-share icon-white"> </i></a></li>
       		  	{% else %}
       		  		{% if request.path != "/" %}
-      		  		<li ><a href="/accounts/register">Join us</a></li>
+      		  		<li ><a href="/accounts/register">注册</a></li>
       		  		{% endif %}
-      		  		<li ><a href="/accounts/login">Sign in</a></li>
+      		  		<li ><a href="/accounts/login">登陆</a></li>
       		  	{% endif %}
       		  	
       		  </ul>

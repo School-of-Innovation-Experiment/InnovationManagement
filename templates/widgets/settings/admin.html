@@ -13,11 +13,11 @@ active
     <form method="post" action=".">
       {% csrf_token %}
 		  <div class="modal-body">
-			   <label class="settings-label">Old Password</label>
+			   <label class="settings-label">旧密码</label>
          {{ form.old_password }}
           <span class="form-error help-inline">{{form.old_password.errors}}</span>
     		 <br/>
-    		 <label class="settings-label">New Password</label>
+    		 <label class="settings-label">新密码</label>
          {{ form.new_password }}
           <span class="form-error help-inline">{{form.new_password.errors}}</span>
     		 <br/>
