@@ -1,15 +1,14 @@
-<!--titile user information bar-->
-
+ <!--titile user information bar-->
 <div class="container">
-	<div class="btn-group pull-right">
-		<a href="/history" rel="tooltip" class="btn btn-info"><i class="icon-star"></i>Total</a>
-		<a href="/history" class="user-count">30<a>
-	</div>
-	<div class="btn-group">
-		<a href="/settings/profile" class="user-info">{{request.user.username}}</a>
-		<a href="/settings/profile" class="label label-important user-info-label">VIP</a>
-		<a href="/settings/profile" class="label user-info-label">Level 1</a>
-	</div>
+<div class="pull-right">
+<a type="button" class="btn btn-info"  href="/teacher/" >指导教师</a>
+
+<a type="button" class="btn btn-danger"  href="/expert/" >评审专家</a>
+</div>
+<div class="pull-left">
+<a href="/settings/profile" class="user-info">{{request.user.username}}</a>
+<a href="/settings/profile" class="label label-important user-info-label">评审专家</a>
 </div>
 
- 
+</div>
+<br/>
