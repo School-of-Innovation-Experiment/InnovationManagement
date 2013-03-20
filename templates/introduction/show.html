@@ -3,19 +3,55 @@
 {% block content %}
 
 <!-- index style -->
-<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/index.css" >
-<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/content.css" >
-<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/accounts_form.css" >
-
 <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/masonry.css" >
 
-<div class="container form-container ">
-  <div class="clearfix masonry" style="position: relative; height: 100%;"> 
-    <!--header-->
+<div class="center-flow">
+<div class="flow-style">
+  <!--header-->
+    <div class="clearfix" id="flow_container"> 
+      <div class="box photo col3">
+        <a title="三轮自行车"><img src="{{STATIC_URL}}images/examples/bike.jpg"  /></a>
+      </div>
+      <div class="box photo col3">
+        <a title="私家车超强防御系统"><img src="{{STATIC_URL}}images/examples/car.jpg" /></a>
+      </div>
+      <div class="box photo col3">
+        <a title="手机捕鼠夹"><img src="{{STATIC_URL}}images/examples/catchmouse.jpg"/></a>
+      </div>
+      <div class="box photo col3">
+        <a title="能上网的咖啡杯"><img src="{{STATIC_URL}}images/examples/cafenet.jpg" /></a>
+      </div>
+      <div class="box photo col3">
+        <a title="三轮自行车"><img src="{{STATIC_URL}}images/examples/computer.jpg"/></a>
+      </div>
+      <div class="box photo col3">
+        <a title="用激光切割食物的餐叉"><img src="{{STATIC_URL}}images/examples/food.jpg" /></a>
+      </div>
 
-    <!--content-->
+      <div class="box photo col3">
+        <a title="功能及其强大的鼠标"><img src="{{STATIC_URL}}images/examples/mouse.jpg"/></a>
+      </div>
+      <div class="box photo col3">
+        <a title="豪华手机音响系统"><img src="{{STATIC_URL}}images/examples/phone.jpg"/></a>
+      </div>
+      <div class="box photo col3">
+        <a title="遥控吹风器二合一版"><img src="{{STATIC_URL}}images/examples/remote.jpg"/></a>
+      </div>
+      <div class="box photo col3">
+        <a title="三轮自行车"><img src="{{STATIC_URL}}images/examples/robot.jpg" /></a>
+      </div>
+      <div class="box photo col3">
+        <a title="带排气筒的运动鞋"><img src="{{STATIC_URL}}images/examples/shoot.jpg"/></a>
+      </div>
+      <div class="box photo col3">
+        <a title="太阳能充电式手电筒"><img src="{{STATIC_URL}}images/examples/sunlight.jpg" /></a>
+      </div>
+      <div class="box photo col3">
+        <a title="带GPS导航的儿童脚踏车"><img src="{{STATIC_URL}}images/examples/gps.jpg"/></a>
+      </div>
+  <!--content-->
+    </div>
 
-  </div>
 </div>
-
+</div>
 {% endblock %}
