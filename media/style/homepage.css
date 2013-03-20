@@ -1,26 +1,26 @@
 body {
     font-size: 11px;
     background-color: #0e4c92;
+    height: 100%;
+    padding-bottom: 0px;
 }
-ul, ol{
+
+.body {
+    height: 100%;
+}
+p, ul, ol{
     margin: 0;
     padding: 0;
 }
-.home-out-wrap {
-    background-color: #fff;
-}
-.home-main{
-    /* border-right: 1px solid #0064b9; */
-    /* background-color: #fff; */
 
-    /* set minimum height */
-    /* min-height: 500px; */
-    /* height: auto !important; */
-    height: 578px;
-    /* width: 1203px; */
-    min-width: 1205px;
-    width: 85%;
+/* customiz carousel */
+.carousel {
+    height: 60%;
 }
+.carousel-inner {
+    height: 100%;
+}
+
 .home-title {
     height: 95px;
     text-align:center;
@@ -36,13 +36,30 @@ ul, ol{
     vertical-align: middle;
     color: rgba(255, 255, 255, 0.3);
 }
+.home-out-wrap {
+    background-color: #fff;
+    height:90%;
+}
+.home-main{
+    /* border-right: 1px solid #0064b9; */
+    background-color: #fff;
+
+    /* set minimum height */
+    /* min-height: 578px; */
+    /* height: 100%; */
+    /* height: auto !important; */
+    height: 578px;
+    /* width: 1203px; */
+    min-width: 1205px;
+    width: 85%;
+}
 .home-aside {
     /* width: 192px; */
     width: 15%;
     min-width: 190px;
     padding-left: 0px;
-    padding-bottom: 20px;
-    margin-top: 8px;
+    /* padding-bottom: 20px; */
+    /* margin-top: 8px; */
     margin-right: 0px;
     float: left;
     display: inline;
@@ -79,6 +96,9 @@ div.home-nav ul li a:hover {
     border-bottom: 1px solid #0064b9;
     background-color: #fbf9d6;
 }
+div.home-link {
+    float: left;
+}
 div.home-link ul {
     line-height: 1.3em;
 }
@@ -111,7 +131,7 @@ div.home-aside ul li {
 .home-content {
     float: left;
     /* width: 1010px; */
-    width: 70%;
+    width: 84%;
     min-width: 1010px;
     height: 100%;
     border-left: 1px solid #0064b9;
@@ -119,12 +139,14 @@ div.home-aside ul li {
 }
 
 .front-wrap {
+    height: 40%;
     overflow: hidden;
-    margin: 15px 0;
 }
 .home-news {
     margin: 0;
+    width: 47%;
     float: left;
+    height: 100%;
     padding: 0 15px;
     display: inline;
 }
@@ -143,5 +165,25 @@ hr {
     padding-bottom: 12px;
 }
 table.news {
-    width: 450px;
+    width: 100%;
+    height: 60%;
+    display: block;
+    overflow: hidden;
+}
+table.documents {
+    overflow: hidden;
+    table-layout: fixed;
+    width: 100%;
+}
+div.documents-list {
+    height: 60%;
+    overflow： hidden;
+}
+table.documents td:nth-child(2) a {
+    /* width:27em; */
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow:hidden;
+    display: block;
 }
