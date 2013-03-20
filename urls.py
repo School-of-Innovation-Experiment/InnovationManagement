@@ -89,6 +89,11 @@ urlpatterns = patterns('',
         name="features"
     ),
     url(
+        r'^show/$',
+        direct_to_template, {'template': 'introduction/show.html'},
+        name="show"
+    ),
+    url(
         r'^settings/profile/$',
         #direct_to_template, {'template': 'widgets/settings/profile.html'},
         users_views.profile
