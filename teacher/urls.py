@@ -19,17 +19,13 @@ urlpatterns = patterns('',
         r'^initial$',
         direct_to_template, {'template': 'teacher/initial.html'}
     ),
-        url(
-        r'^initial1$',
-        direct_to_template, {'template': 'teacher/initial1.html'}
-    ),
     url(
         r'^midterm$',
-        direct_to_template, {'template': 'teacher/midterm.html'}
+        direct_to_template, {'template': 'teacher/initial.html'}
     ),
     url(
         r'^final$',
-        direct_to_template, {'template': 'teacher/final.html'}
+        direct_to_template, {'template': 'teacher/initial.html'}
     ),
     url(
         r'^progress$',

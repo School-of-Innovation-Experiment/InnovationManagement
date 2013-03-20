@@ -8,8 +8,15 @@
   <!-- index style -->
   <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/index.css" >
   <link rel="stylesheet" href="{{ STATIC_URL }}style/homepage.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="{{ STATIC_URL }}style/gh-fork-ribbon.css" type="text/css" media="screen" />
+  <div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+      <a href="/">创新创业＊校级版</a>
+    </div>
+  </div>
+
   <div class="home-title">
-    <p>欢迎使用<span style="color: #fff;"> 大学生创新创业管理系统</span></p>
+    <p>欢迎使用<span style="color: #fff;"> 大学生创新创业管理平台</span></p>
   </div>
   <div class="home-out-wrap">
     <div class="home-main">
@@ -31,15 +38,34 @@
             <li>
               <a href="teacher/">教师</a>
             </li>
+            <li>
+              <a href="academicStaff/">Academical  Staff</a>
+            </li>
+            <li>
+              <a href="facultyStaff/">Faculy Staff</a>
+            </li>
+            <li>
+              <a href="admin/">System Admin</a>
+            </li>
           </ul>
           <hr />
+          <hr />
+
           <ul>
+            {% if request.user.is_authenticated %}
             <li>
               <a href="settings/profile">用户信息</a>
             </li>
             <li>
+<<<<<<< HEAD
               <a href="account/logout">注销</a>
+=======
+              <a href="accounts/logout">logout</a>
+>>>>>>> 93712a2ddc9450f11e010311766bd1866fe13246
             </li>
+            {% else %}
+      		  <li ><a href="/accounts/login">Sign in</a></li>
+            {% endif%}
           </ul>
         </div>
         <div class="home-link">

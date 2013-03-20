@@ -46,7 +46,7 @@ ul, ol{
 div.home-nav {
     margin: 10px 0 20px 0;
     float: left;
-    height: 216px;
+    /*height: 216px;*/
 }
 div.home-nav ul {
     font-family: Verdana, Geneva, Arial, sans-serif;
