@@ -35,7 +35,9 @@
     {% block home-footer %}
       {% include "widgets/footer.html" %}
     {% endblock %}
-    {% include "meta/bottom_scripts.html" %}
+    {% block bottom_js %}
+      {% include "meta/bottom_scripts.html" %}
+    {% endblock %}
     {% block endjs %}{% endblock %}
     {% block footer-alert-bar %}
       <div class="alert footer-alert-bar">

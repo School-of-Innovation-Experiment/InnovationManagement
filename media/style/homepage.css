@@ -10,15 +10,16 @@ ul, ol{
     background-color: #fff;
 }
 .home-main{
-    border-right: 1px solid #0064b9;
-    background-color: #fff;
+    /* border-right: 1px solid #0064b9; */
+    /* background-color: #fff; */
+
     /* set minimum height */
     /* min-height: 500px; */
     /* height: auto !important; */
     height: 578px;
     /* width: 1203px; */
-    min-width: 1203px;
-    width: 70%;
+    min-width: 1205px;
+    width: 85%;
 }
 .home-title {
     height: 95px;
@@ -38,7 +39,7 @@ ul, ol{
 .home-aside {
     /* width: 192px; */
     width: 15%;
-    min-width: 192px;
+    min-width: 190px;
     padding-left: 0px;
     padding-bottom: 20px;
     margin-top: 8px;
@@ -109,9 +110,12 @@ div.home-aside ul li {
 }
 .home-content {
     float: left;
-    width: 1010px;
+    /* width: 1010px; */
+    width: 70%;
+    min-width: 1010px;
     height: 100%;
     border-left: 1px solid #0064b9;
+    border-right: 1px solid #0064b9;
 }
 
 .front-wrap {
