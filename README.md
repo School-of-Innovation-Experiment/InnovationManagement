@@ -12,3 +12,5 @@ A website for College students Innovation  Entrepreneurial  in Liaoning Province
  1. sync database in project root path: python manage.py syncdb
  1. test server : python manage.py runserver IP:PORT
  1. visit your web browser: IP:PORT
+
+
