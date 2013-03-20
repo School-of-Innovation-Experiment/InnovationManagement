@@ -15,8 +15,8 @@
 		{% csrf_token %}
 	<br>
 	<br>
-	<p>{% trans "忘记密码" %}? <a href="{% url auth_password_reset %}">{% trans "重设" %}</a>!</p>
-	<p>{% trans "没有帐号" %}? <a href="{% url registration_register %}">{% trans "注册" %}</a>!</p>
+	<p>{% trans "forget password" %}? <a href="{% url auth_password_reset %}">{% trans "reset" %}</a>!</p>
+	<p>{% trans "sign up" %}? <a href="{% url registration_register %}">{% trans "login" %}</a>!</p>
 	</form>	
 
 </div>
