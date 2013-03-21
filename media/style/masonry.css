@@ -217,10 +217,20 @@ body{
 .flow-style {
   	padding-top: 100px;
 	  padding-bottom: 100px;
-    margin-left:5%;
-    margin-right:5%;
+    margin-left:75px;
+    margin-right:auto;
+    text-align:left;
 }
 
 .center-flow{
   text-align:center;
+}
+
+.member-name{
+  font-weight:bold;
+}
+
+.title{
+  text-align:center;
+  margin-top:15px;
 }

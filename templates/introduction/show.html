@@ -5,12 +5,24 @@
 <!-- index style -->
 <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}style/masonry.css" >
 
-<div class="center-flow">
 <div class="flow-style">
   <!--header-->
     <div class="clearfix" id="flow_container"> 
       <div class="box photo col3">
-        <a title="三轮自行车"><img src="{{STATIC_URL}}images/examples/bike.jpg"  /></a>
+      <div class="github-fork-ribbon-wrapper left">
+        <div class="github-fork-ribbon">
+          <a href="/">国家级</a>
+        </div>
+      </div>
+        <a href="" title="三轮自行车"><img src="{{STATIC_URL}}images/examples/bike.jpg"  /></a>
+        <h4 class="title">三轮自行车</h4>
+        <hr/>
+        <span class="label label-info pull-right">大连理工大学</span>
+        <p class="member-name">参赛团队: 李平 王菲 迷龙 王自如</p>
+        <br／>
+        <small class="pull-left">
+这款经过改造的三轮自行车，在两个前轮之间加装了特殊的控制装置，转弯时，三个车轮可以一起倾斜着前进。这款车在骑行时，不仅转弯速度比一般自行车快，还能让 ...
+        </small>
       </div>
       <div class="box photo col3">
         <a title="私家车超强防御系统"><img src="{{STATIC_URL}}images/examples/car.jpg" /></a>
@@ -51,7 +63,5 @@
       </div>
   <!--content-->
     </div>
-
-</div>
 </div>
 {% endblock %}
