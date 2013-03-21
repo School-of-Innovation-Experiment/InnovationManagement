@@ -64,7 +64,7 @@ urlpatterns = patterns('',
         name="news"
     ),
     url(
-        r'^showtime/$',
+        r'^show/showtime/$',
        	include('showtime.urls'),
        	name = "showtime"
     ),
