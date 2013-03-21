@@ -33,7 +33,10 @@ p, ul, ol{
 }
 .home-out-wrap {
     background-color: #fff;
+    position: absolute;
     height: 85%;
+    min-height: 578px;
+    width: 100%;
 }
 .home-main{
     /* border-right: 1px solid #0064b9; */
@@ -43,7 +46,8 @@ p, ul, ol{
     /* min-height: 578px; */
     /* height: 100%; */
     /* height: auto !important; */
-    min-height: 578px;
+    position: absolute;
+    /* min-height: 578px; */
     height: 100%;
     /* width: 1203px; */
     min-width: 1205px;
@@ -61,6 +65,21 @@ p, ul, ol{
     display: inline;
     height: 100%;
 }
+div.home-aside h6 {
+    line-height: 14px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #585858;
+    margin: 0px 0 5px 15px;
+}
+div.home-aside ul li {
+    line-height: 14px;
+
+    float: left;
+    width: 190px;
+    position: relative;
+    list-style-type: none;
+}
 div.home-nav {
     margin: 10px 0 20px 0;
     float: left;
@@ -71,7 +90,8 @@ div.home-nav ul {
     font-size: 11px;
     line-height: 1.2em;
     float: left;
-    width: 191px; /* menu width, also set on LI below */
+    width: 90%;
+    /* width: 191px; /\* menu width, also set on LI below *\/ */
     /* position: absolute; quick fix for IE 6 */
     position: relative;
     z-index: 5;
@@ -86,6 +106,9 @@ div.home-nav ul li a {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     height: 1%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 div.home-nav ul li a:hover {
     border-top: 1px solid #0064b9;
@@ -109,21 +132,7 @@ div.home-link ul li a {
 div.home-link ul li a:hover {
     color: #2a85ee;
 }
-div.home-aside h6 {
-    line-height: 14px;
-    font-size: 11px;
-    font-weight: bold;
-    color: #585858;
-    margin: 0px 0 5px 15px;
-}
-div.home-aside ul li {
-    line-height: 14px;
 
-    float: left;
-    width: 190px;
-    position: relative;
-    list-style-type: none;
-}
 .home-content {
     float: left;
     /* width: 1010px; */
