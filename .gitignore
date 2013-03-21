@@ -1,6 +1,7 @@
 *.py[cod]
 *~
 media/cms-media/*
+.ropeproject/*
 
 log/*
 # C extensions
