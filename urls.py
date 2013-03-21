@@ -69,6 +69,11 @@ urlpatterns = patterns('',
         name="news"
     ),
     url(
+        r'^show/showtime/$',
+       	include('showtime.urls'),
+       	name = "showtime"
+    ),
+    url(
         r'^newtask/$',
         direct_to_template, {'template': 'features/newtask.html'},
         #gui_views.basic_search
