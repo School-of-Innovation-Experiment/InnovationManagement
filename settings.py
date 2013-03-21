@@ -1,5 +1,3 @@
-# Django settings for Rest project.
-
 import os
 import logging
 from os.path import join
