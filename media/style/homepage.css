@@ -19,6 +19,9 @@ p, ul, ol{
 .home-title {
     height: 95px;
     text-align:center;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     /* background-color: #0e4c92; */
 }
 .home-title p {
@@ -61,6 +64,7 @@ p, ul, ol{
     /* padding-bottom: 20px; */
     /* margin-top: 8px; */
     margin-right: 0px;
+    border-right: 1px solid #0064b9;
     float: left;
     display: inline;
     height: 100%;
@@ -143,7 +147,7 @@ div.home-link ul li a:hover {
     width: 84%;
     min-width: 1010px;
     height: 100%;
-    border-left: 1px solid #0064b9;
+    /* border-left: 1px solid #0064b9; */
     border-right: 1px solid #0064b9;
 }
 /* customiz carousel */
@@ -201,4 +205,32 @@ table.documents td:nth-child(2) a {
     -o-text-overflow:ellipsis;
     overflow:hidden;
     display: block;
+}
+.news-main {
+    height: 100%;
+    overflow: hidden;
+}
+.news-list {
+    margin: 0;
+    width: 45%;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #0064b9;
+    padding: 0 15px;
+    display: inline;
+}
+.news-documents {
+    height: 75% !important;
+}
+.search {
+    float: right;
+    margin: 5px 0;
+}
+.search-input {
+    width: 120px;
+    border: 1px solid #ccc !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+    margin-bottom: 0 !important;
+    height: 15px !important;
 }
