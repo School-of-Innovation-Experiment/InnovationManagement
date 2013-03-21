@@ -1,26 +1,21 @@
 body {
     font-size: 11px;
     background-color: #0e4c92;
+    position: absolute;
     height: 100%;
-    padding-bottom: 0px;
+    width: 100%;
+    padding: 0px;
 }
-
 .body {
+    /* background-color: #0e4c92; */
+    position: absolute;
     height: 100%;
+    width: 100%;
 }
 p, ul, ol{
     margin: 0;
     padding: 0;
 }
-
-/* customiz carousel */
-.carousel {
-    height: 60%;
-}
-.carousel-inner {
-    height: 100%;
-}
-
 .home-title {
     height: 95px;
     text-align:center;
@@ -38,7 +33,7 @@ p, ul, ol{
 }
 .home-out-wrap {
     background-color: #fff;
-    height:90%;
+    height: 85%;
 }
 .home-main{
     /* border-right: 1px solid #0064b9; */
@@ -48,7 +43,8 @@ p, ul, ol{
     /* min-height: 578px; */
     /* height: 100%; */
     /* height: auto !important; */
-    height: 578px;
+    min-height: 578px;
+    height: 100%;
     /* width: 1203px; */
     min-width: 1205px;
     width: 85%;
@@ -137,7 +133,13 @@ div.home-aside ul li {
     border-left: 1px solid #0064b9;
     border-right: 1px solid #0064b9;
 }
-
+/* customiz carousel */
+.carousel {
+    height: 60%;
+}
+.carousel-inner {
+    height: 100%;
+}
 .front-wrap {
     height: 40%;
     overflow: hidden;
