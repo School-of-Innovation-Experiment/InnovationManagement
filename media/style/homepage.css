@@ -5,6 +5,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 0px;
+    min-width: 800px;
 }
 .body {
     /* background-color: #0e4c92; */
@@ -19,7 +20,6 @@ p, ul, ol{
 .home-title {
     height: 95px;
     text-align:center;
-    width: 900px;
     margin-left: auto;
     margin-right: auto;
     /* background-color: #0e4c92; */
@@ -53,13 +53,13 @@ p, ul, ol{
     /* min-height: 578px; */
     height: 100%;
     /* width: 1203px; */
-    min-width: 1205px;
+    min-width: 800px;
     width: 85%;
 }
 .home-aside {
     /* width: 192px; */
     width: 15%;
-    min-width: 190px;
+    min-width: 123px;
     padding-left: 0px;
     /* padding-bottom: 20px; */
     /* margin-top: 8px; */
@@ -123,6 +123,7 @@ div.home-nav ul li a:hover {
 }
 div.home-link {
     float: left;
+    width: 100%;
 }
 div.home-link ul {
     line-height: 1.3em;
@@ -136,6 +137,10 @@ div.home-link ul li a {
     text-decoration: none;
     font-size: 11px;
     width: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
 }
 div.home-link ul li a:hover {
     color: #2a85ee;
@@ -145,7 +150,7 @@ div.home-link ul li a:hover {
     float: left;
     /* width: 1010px; */
     width: 84%;
-    min-width: 1010px;
+    min-width: 675px;
     height: 100%;
     /* border-left: 1px solid #0064b9; */
     border-right: 1px solid #0064b9;
@@ -166,7 +171,7 @@ div.home-link ul li a:hover {
     width: 47%;
     float: left;
     height: 100%;
-    padding: 0 15px;
+    padding: 0 1.5%;
     display: inline;
 }
 
@@ -198,13 +203,11 @@ div.documents-list {
     height: 60%;
     overflow： hidden;
 }
-table.documents td:nth-child(2) a {
-    /* width:27em; */
+table.documents td {
     white-space:nowrap;
     text-overflow:ellipsis;
     -o-text-overflow:ellipsis;
     overflow:hidden;
-    display: block;
 }
 .news-main {
     height: 100%;
