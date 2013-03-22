@@ -1,0 +1,94 @@
+{% extends "facultyStaff/administrator.html" %}
+{% block nav_admin_content %}
+    <div class="">
+        <div class="well form-inline">
+            <input type="text" class="input-middle" id="detail" placeholder="支出明细">
+            <input type="text" class="input-small" id="handle_person" placeholder="经手人">
+            <input type="text" class="input-small" id="money" placeholder="金额">
+            <input type="text" class="input-small" id="team" placeholder="队伍名">
+            <select id="degree">
+                <option>院级</option>
+                <option selected="true">校级</option>
+            </select>
+            <select id="faculty">
+                <option>电信学院</option>
+                <option>管理经济</option>
+                <option selected="true">热能动力</option>
+                <option>建工学部</option>
+            </select>
+            <span class="pull-right"><button class="btn btn-primary" onclick="get_info()">输入</button></span>
+        </div>
+	    <div class="well">
+	      <h3>项目报销</h3>
+          <div class="accordion-inner">
+		  <table class="table table-hover" id="item_table">
+		    <thead>
+		      <tr >
+		        <th>支出明细</th>
+		        <th>经手人</th>
+		        <th>金额</th>
+                <th>队伍名</th>
+                <th>级别</th>
+                <th>学院</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>买IPAD</td>
+		        <td>张三</td>
+		        <td>3000.00</td>
+                <td>张三队</td>
+                <td>校级</td>
+                <td>电信学部</td>
+		      </tr>
+		      <tr>
+		        <td>论文审稿费</td>
+		        <td>黎明</td>
+		        <td>1500.00</td>
+                <td>黎明队</td>
+                <td>院级</td>
+                <td>建工学部</td>
+		      </tr>
+		      <tr>
+		        <td>购买图书</td>
+		        <td>李名</td>
+		        <td>5000.00</td>
+                <td>李名队</td>
+                <td>院级</td>
+                <td>管理经济</td>
+		      </tr>
+		    </tbody>
+		  </table>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function get_info()
+        {
+            detail               = document.getElementById("detail").value;
+            handle_person        = document.getElementById("handle_person").value;
+            money                = document.getElementById("money").value;
+            team                 = document.getElementById("team").value;
+            x                    = document.getElementById("degree");
+            degree               = x.options[x.selectedIndex].text;
+            y                    = document.getElementById("faculty");
+            faculty              = y.options[y.selectedIndex].text;
+
+            table                = document.getElementById("item_table").insertRow(1);
+            t_detail             = table.insertCell(0);
+            t_detail.innerHTML   = detail;
+            t_handle_person      = table.insertCell(1);
+            t_handle_person.innerHTML   = handle_person;
+            t_money              = table.insertCell(2);
+            t_money.innerHTML    = money;
+            t_team               = table.insertCell(3);
+            t_team.innerHTML     = team;
+            t_degree             = table.insertCell(4);
+            t_degree.innerHTML   = degree;
+            t_faculty            = table.insertCell(5);
+            t_faculty.innerHTML  = faculty
+        }
+    </script>
+  </div>
+{% endblock %}

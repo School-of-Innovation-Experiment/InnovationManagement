@@ -114,13 +114,3 @@ $(document).ready(function(){
   });
   
 });
-
-/*
-$(document).ready(function(){
-	$('ul li a.setting-bar').click(
-		function(){
-			$("ul li a.setting-bar").parent().removeClass('active');
-			$(this).parent().attr('class','active');
-		});
-});
-*/
